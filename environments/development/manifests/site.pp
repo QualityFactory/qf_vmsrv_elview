@@ -1,3 +1,5 @@
 node default{
-  include qf_elview
+  class {'qf_elview':
+    port => $::port
+  }
 }

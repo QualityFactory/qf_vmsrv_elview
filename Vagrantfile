@@ -21,6 +21,11 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
   config.vm.provision "puppet" do |puppet|
   	puppet.environment_path = "environments"
   	puppet.environment 	= "development"
- 	puppet.module_path      = "puppet/modules"
+ 	  puppet.module_path      = "puppet/modules"
+
+    puppet.facter = {
+      "port" => 73
+    }
+    
   end
 end
