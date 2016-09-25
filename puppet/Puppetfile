@@ -1,0 +1,6 @@
+#Manage Puppet Module dependencies with librarian-puppet
+
+forge 'http://forge.puppetlabs.com'
+
+mod 'qf_elview',
+	:git => "https://github.com/qualityfactory/qf_elview.git"
